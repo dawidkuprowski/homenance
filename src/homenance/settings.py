@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'compressor',
-    'app_bills.apps.AppBillsConfig',
-    'authentication.apps.AuthenticationConfig'
+    'authentication.apps.AuthenticationConfig',
+    'main.apps.MainConfig',
+
+    'app_bills.apps.AppBillsConfig'
 ]
 
 MIDDLEWARE = [
@@ -142,5 +144,5 @@ STATICFILES_FINDERS = [
 ]
 
 LOGIN_URL = 'authentication-login'
-LOGIN_REDIRECT_URL = 'bills-index'
+LOGIN_REDIRECT_URL = 'main-home'
 LOGOUT_REDIRECT_URL = 'authentication-login'
